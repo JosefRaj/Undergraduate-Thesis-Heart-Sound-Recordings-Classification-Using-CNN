@@ -1,8 +1,8 @@
-# Heart Sound Classification Reproducibility Project
+# Heart Sound Classification: Reproducible Pipeline
 
-This repository draft turns an existing B.Sc. thesis on normal-versus-abnormal phonocardiogram classification into a reproducible signal-processing and machine-learning workflow.
+This project turns an existing B.Sc. thesis on normal-versus-abnormal phonocardiogram classification into a reproducible signal-processing and machine-learning workflow.
 
-> **Current status:** local draft. The software pipeline and automated tests run successfully, but evaluation on the real PhysioNet/CinC 2016 dataset has not yet been completed. Synthetic-demo scores are software checks, not model-performance claims. See [`BUILD_STATUS.md`](BUILD_STATUS.md).
+> **Current status:** the software pipeline and automated tests run successfully, but evaluation on the real PhysioNet/CinC 2016 dataset has not yet been completed. Synthetic-demo scores are software checks, not model-performance claims. See the [model card](reports/model-card.md).
 
 ## Project origin and ownership
 
@@ -21,14 +21,13 @@ The historical thesis reported approximately 92% average accuracy and F1 score o
 - binary classification metrics and confusion matrix generation;
 - an optional TensorFlow/Keras CNN architecture;
 - unit tests using generated synthetic heart-like signals;
-- explicit limitations and an interview-preparation guide.
+- explicit limitations and a model card.
 
 ## Repository structure
 
 ```text
 heart-sound-ml-reproducibility/
   data/README.md
-  docs/interview-preparation.md
   reports/model-card.md
   src/heart_sound_ml/
     __init__.py
@@ -81,3 +80,4 @@ Follow `data/README.md`. The repository intentionally does not redistribute Phys
 ## Ethical and technical limitations
 
 This is an educational signal-classification project. It is not a diagnostic device. The PhysioNet dataset contains heterogeneous acquisition conditions, label uncertainty and class imbalance. A random segment-level split can cause leakage and inflated metrics; grouping by recording/patient is mandatory.
+
