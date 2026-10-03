@@ -75,7 +75,7 @@ Follow `data/README.md`. The repository intentionally does not redistribute Phys
 - Pipeline and synthetic tests: implemented locally.
 - Full PhysioNet reproduction: pending dataset acquisition and execution.
 - Historical notebook/thesis integration: pending review before any GitHub update.
-- CV inclusion: blocked until the measured full-data result is reviewed and approved.
+- CV inclusion: appropriate when described as the authentic 2023--2024 B.Sc. thesis plus a 2026 reproducibility rebuild; the CV must state that the full real-data rerun remains in progress.
 
 ## Ethical and technical limitations
 
